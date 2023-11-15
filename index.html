@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="right">
+                <li>Gmail</li>
+                <li>Images</li>
+            </div>
+            <div class="button">
+                <a
+                    href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.co.in%2F&ec=GAZAmgQ&hl=en&ifkv=AVQVeywEl-_vXHAYtHi9SqMtCyJwCPIT0urD39A0CKC_vmalZUyTlcp8wO128eORtFMIiGA-0U626w&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S319485956%3A1700035336958962&theme=glif"><button
+                        class="btn">Sign in</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section id="logo">
+        <div class="logo"></div>
+    </section>
+    <section id="Search">
+        <div>
+            <div class="search-bar">
+                <div><i class="fa fa-search" aria-hidden="true" onclick="performSearch()"></i></div>
+                <label for="search"></label>
+                <input type="text" id="searchInput" placeholder="Search Google or type a URL"
+                    onkeypress="handleKeyPress(event)">
+                <div><i class="fa fa-microphone" aria-hidden="true" onclick="performVoiceSearch()"></i></div>
+                <div><i class="fa fa-camera" aria-hidden="true" onclick="performImageSearch()"></i></div>
+            </div>
+            <div class="button1">
+                <button class="btn1" onclick="performSearch()">Google Search</button>
+                <button class="btn1">I'm Feeling Lucky</button>
+            </div>
+        </div>
+    </section>
+    <section id="language">
+        <div class="language">
+            Google offered in:
+            <li>हिन्दी</li>
+            <li>বাংলা</li>
+            <li>తెలుగు</li>
+            <li>मराठी</li>
+            <li>தமிழ்</li>
+            <li>ગુજરાતી</li>
+            <li>ಕನ್ನಡ</li>
+            <li>മലയാളം</li>
+            <li>ਪੰਜਾਬੀ</li>
+        </div>
+    </section>
+    <footer>
+        <div class="origin">India</div>
+        <hr>
+        <div class="bottom">
+            <li>About</li>
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>How Search works</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Settings</li>
+        </div>
+    </footer>
+</body>
+
+</html>
